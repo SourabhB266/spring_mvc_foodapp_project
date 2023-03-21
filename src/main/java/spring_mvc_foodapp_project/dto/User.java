@@ -24,7 +24,7 @@ public class User {
 	private Menu menu;
 	@OneToMany(mappedBy = "user")
 	List<Branch> branch;
-	@OneToMany(mappedBy = ="user")
+	@OneToMany(mappedBy = "user")
 	List<FoodOrder> foodOrders;
 
 	public int getId() {
