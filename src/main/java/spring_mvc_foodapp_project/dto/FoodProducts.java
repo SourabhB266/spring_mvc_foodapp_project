@@ -1,4 +1,4 @@
-package dto;
+package spring_mvc_foodapp_project.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,7 +8,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Food_Product {
+public class FoodProducts {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

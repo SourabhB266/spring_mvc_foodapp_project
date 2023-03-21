@@ -1,4 +1,4 @@
-package dto;
+package spring_mvc_foodapp_project.dto;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
