@@ -11,7 +11,6 @@ import javax.persistence.ManyToOne;
 public class FoodOrder {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String status;
 	private double totalPrice;

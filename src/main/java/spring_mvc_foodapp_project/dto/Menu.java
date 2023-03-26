@@ -15,7 +15,6 @@ import javax.persistence.OneToOne;
 @Entity
 public class Menu {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
 	@OneToMany(mappedBy = "menu")

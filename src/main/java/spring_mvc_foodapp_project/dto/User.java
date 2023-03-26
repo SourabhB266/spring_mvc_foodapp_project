@@ -2,9 +2,8 @@ package spring_mvc_foodapp_project.dto;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
@@ -13,17 +12,20 @@ import javax.persistence.OneToOne;
 public class User {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String name;
+	@Column(unique = true)
 	private String email;
+	@Column(unique = true)
 	private String password;
 	private String role;
 
 	@OneToOne
 	private Menu menu;
-	@OneToMany(mappedBy = "user")
+
+	@OneToMany
 	List<Branch> branch;
+
 	@OneToMany(mappedBy = "user")
 	List<FoodOrder> foodOrders;
 

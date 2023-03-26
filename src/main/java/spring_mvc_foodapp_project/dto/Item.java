@@ -11,7 +11,6 @@ import javax.persistence.ManyToOne;
 public class Item {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int productid;
 	private String name;
